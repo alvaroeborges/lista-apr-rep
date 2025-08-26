@@ -2,13 +2,14 @@ const nomeE1 = document.getElementById("nome");
 const notaE1 = document.getElementById("nota");
 const tabelaE1 = document.querySelector("#tabela tbody");
 const botaoAdicionar = document.getElementById("adicionar");
+const botaoImprimir = document.getElementById("imprimir");
 
 function adicionarAluno() {
   // Pega os valores e remove espaços em branco do nome
   const nome = nomeE1.value.trim();
   const nota = parseFloat(notaE1.value);
 
-  // Valida se o nome não está vazio e a nota é um número válido entre 0 e 10
+  // Valida se o nome não está vazio e a nota é um número válido entre 0 e 100
   if (nome && !isNaN(nota) && nota >= 0 && nota <= 100) {
     const novaLinha = tabelaE1.insertRow();
 
@@ -36,4 +37,6 @@ function adicionarAluno() {
   }
 }
 
+
 botaoAdicionar.addEventListener("click", adicionarAluno);
+

@@ -20,6 +20,7 @@ h1 {
     align-items: center;
 }
 
+
 input, button {
     padding: 10px;
     border-radius: 5px;
@@ -33,6 +34,7 @@ button {
     color: white;
     border-color: #007bff;
 }
+
 
 table {
     width: 80%;
@@ -62,3 +64,17 @@ th {
     background-color: #f8d7da; /* Vermelho claro */
     color: #721c24;
 }
+
+ @media print {
+      h1, .form, .no-print {
+        display: none;
+      }
+      body {
+        background: white;
+        margin: 0;
+      }
+      table {
+        margin: 0;
+      }
+    }
+
