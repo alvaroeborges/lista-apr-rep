@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Lista de Notas</h1>
+
+  <div class="form">
+    <input type="text" id="nome" placeholder="Nome do aluno">
+    <input type="number" id="nota" placeholder="Nota" min="0" max="10">
+    <button id="adicionar">Adicionar</button>
+    <button id="imprimir" onclick="window.print()">Imprimir</button>
+  </div>
+
+  <table id="tabela">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Nota</th>
+        <th>Situação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- As linhas dos alunos serão adicionadas aqui pelo JavaScript -->
+    </tbody>
+  </table>
+  
+  <script src="index.js"></script>
+</body>
+</html>
