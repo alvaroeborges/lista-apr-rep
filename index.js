@@ -37,6 +37,5 @@ function adicionarAluno() {
   }
 }
 
-
 botaoAdicionar.addEventListener("click", adicionarAluno);
 
